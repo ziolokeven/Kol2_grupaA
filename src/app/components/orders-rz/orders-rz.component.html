@@ -1,1 +1,6 @@
 <p>orders-rz works!</p>
+
+<div *ngFor="let item of items$">
+  <orders-item-rz [id]="item.id" [title]="item.title" [text]="item.text" [image]="item.image">
+  </orders-item-rz>
+</div>
